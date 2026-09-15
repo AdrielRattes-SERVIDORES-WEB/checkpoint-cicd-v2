@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    # Rota principal com mensagem da Pessoa A
-    return "Mensagem da Pessoa A"
+    # Rota principal com mensagem unificada pós-conflito
+    return "Mensagem unificada pelas Pessoas A e B"
 
 
 @app.route("/status")
