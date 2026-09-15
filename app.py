@@ -15,6 +15,11 @@ def status():
     return {"status": "ok", "service": "checkpoint-cicd"}
 
 
+@app.route("/about")
+def about():
+    return {"project": "checkpoint-cicd", "team": "Pessoa A & Pessoa B"}
+
+
 @app.route("/version")
 def version():
     return {"version": "1.0.0"}
