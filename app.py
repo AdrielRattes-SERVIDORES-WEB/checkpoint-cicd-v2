@@ -15,5 +15,10 @@ def status():
     return {"status": "ok", "service": "checkpoint-cicd"}
 
 
+@app.route("/version")
+def version():
+    return {"version": "1.0.0"}
+
+
 if __name__ == "__main__":
     app.run(debug=True)
