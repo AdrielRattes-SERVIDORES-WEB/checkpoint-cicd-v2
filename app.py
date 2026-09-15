@@ -15,5 +15,10 @@ def status():
     return {"status": "ok", "service": "checkpoint-cicd"}
 
 
+@app.route("/about")
+def about():
+    return {"project": "checkpoint-cicd", "team": "Pessoa A & Pessoa B"}
+
+
 if __name__ == "__main__":
     app.run(debug=True)
