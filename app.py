@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    # Rota principal de boas-vindas
-    return "Hello, CI/CD!"
+    # Rota principal com mensagem da Pessoa B
+    return "Mensagem da Pessoa B"
 
 
 @app.route("/status")
